@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8" /> 
+	<meta name="Laurie Hergreuter" content="Lightly Floured">
+	<meta name="Description" content="">
+	<meta name="Keywords" content="">
+	<title>Lightly Floured | Gallery</title>  
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/slider.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+<body>
+<div id="site-wrapper">
+	<div id="main-content-int">
+	<header id="main-header-int">
+		<div id="small-logo">
+			<a href="index.html"><img src="images/logo-sm.png" alt="small logo"> </a>
+	</div>
+	<nav id="main-nav-int">
+		<ul>
+			<li><a href="about.html">About</li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="process.html">Process</a></li>
+			<li>Gallery</li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>		
+	</nav>
+	<div id="tagline-img-int">
+		<img src="images/tag-paper-home.png" alt="torn-paper"/>
+	</div>
+		<div id="quote">
+		<h1>"Laurie's cakes are not only <br>beautiful but delicious!" -&#8202;Cheryl</h1>
+	</div>
+	</header>
+	<div id="content-wrapper">
+	<div id="main-content-box">	
+</head>
+        <body>
+            <div id="container">
+                <div id="body">
+                    <div id="slider">
+                        <a class="button prev" href="#" rel="nofollow"><img src="images/prev.png"/></a>
+                        <a class="button next" href="#" rel="nofollow"><img src="images/next.png"/></a>
+                        <div class="holder_cont">
+                            <ul class="holder">
+                              <li class="slide first">
+                                <div class="caption">
+                                  <h4>Vivamus nisl</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies iaculis dictum. </p>                                  
+                                </div>
+                              </li>
+                              <li class="slide">
+                                <div class="caption">
+                                  <h4>Aliquam in est purus.</h4>
+                                   <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>                                   
+                                </div>
+                              </li>
+                              <li class="slide">
+                                <div class="caption">
+                                  <h4>Mauris ultricies</h4>
+                                  <p>Maecenas viverra placerat massa id iaculis. Mauris ultricies posuere nisi, ut dignissim libero lacinia eget. </p>                                   
+                                </div>
+                              </li>
+                              <li class="slide">
+                                <div class="caption">
+                                  <h4>Fusce porttitor</h4>
+                                  <p>Sed ultrices ipsum vel risus rhoncus suscipit. Nulla nulla sapien, rhoncus eget vehicula et, aliquam a justo.  </p>                                   
+                                </div>
+                              </li>
+                              <li class="slide">
+                                <div class="caption">
+                                  <h4>Suspendisse interdum</h4>
+                                  <p>Fusce rutrum, orci ac dictum gravida, massa massa eleifend tortor. </p>                                   
+                                </div>
+                              </li>
+                              <li class="slide">
+                                <div class="caption">
+                                  <h4>Aliquam aliquet</h4>
+                                  <p>Phasellus quis sapien purus, id euismod nibh. </p>                                   
+                                </div>
+                              </li>                              
+                            </ul>
+                        </div>
+                        <div class="clear"></div>                            
+                   </div>
+                   <script type = "text/javascript">
+                       $(window).load(function(){                            
+                            var images = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg', 'img/6.jpg'];
+                            $('#slider').append('<img src="images/loader.gif" id="slider_loader" style="position:absolute; top:45%; left:45%;"/>');
+                            $.preloadImages(images, init);
+                            function init()
+                            {
+                                $('#slider_loader').remove();
+                                $('#slider').imgSlider(images);
+                            }                            
+                       });
+                   </script>	
+                </div>
+            </div>       
+	</div><!--end of main-content-box-->
+	</div><!--end of content-wrapper-->
+	</div><!--end of main-content-int-->
+<footer id="main-footer">
+<p>&copy; 2012 Lightly Floured. All Rights Reserved.</p>
+</footer>
+</div><!--end of site wrapper-->
+</body>
+</html>
